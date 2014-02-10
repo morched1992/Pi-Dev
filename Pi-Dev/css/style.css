@@ -581,11 +581,14 @@ footer a {color:#717171;}
 }
 	.social-list li a {
 		display:inline-block;
-		width:27px;
+		width:24px;
 		height:24px;
-		background:#585858;
+		/*background:#585858;*/
 	}
 		.social-list li a:hover {
-			background:#b30404;
+			/*background:#b30404;
+			background-size:auto;
+			background:url(../images/social-icon-1_ON.png) no-repeat center;*/
+			
 		}
 		
