@@ -29,9 +29,8 @@
 <![endif]-->
 </head>
 <body>
-<?php include('Connexion.php');?>
- <?php $v=$_GET["idalbum"];
- if($v!=null)
+<?php include('Connexion.php');
+ if($_GET["idalbum"]!=null)
  	 {
 	 $v=$_GET["idalbum"];
 	 }

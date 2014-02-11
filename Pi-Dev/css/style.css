@@ -596,8 +596,8 @@ footer a {color:#717171;}
 		display:inline-block;
 		width:27px;
 		height:24px;
-		background:#585858;
+		/*background:#585858;*/
 	}
 		.social-list li a:hover {
-			background:#b30404;
+			/*background:#b30404;*/
 		}
