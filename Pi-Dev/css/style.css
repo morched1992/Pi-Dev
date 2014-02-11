@@ -248,7 +248,7 @@ header .inner {
 	position:fixed;
 	margin-top:-100px;
 	z-index:2;
-	margin-left:100px;
+	margin-left:60px;
 }
 .logo {
 	display:inline-block;
@@ -464,11 +464,24 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 	font-weight:bold;
 }
 	.author i {font-weight:normal;}
+	
+#ContenuSection{border:3px solid #9FC6FF;
+border-color:#444;
+padding:5px;
+/*arrondir les coins en haut à gauche et en bas à droite*/
+-moz-border-radius:10px 0;
+-webkit-border-radius:10px 0;
+border-radius:50px 0;
+}
+
+#cadrecontenu{font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+font-size:27px;
+color:#E00;}
 
 .dropcap {
 	float:left;
 	font-family: 'Passion One', cursive;
-	font-size:24px;
+	font-size:16px;
 	line-height:30px;
 	color:#b30404;
 	margin:0 5px 0 0;
@@ -581,14 +594,10 @@ footer a {color:#717171;}
 }
 	.social-list li a {
 		display:inline-block;
-		width:24px;
+		width:27px;
 		height:24px;
-		/*background:#585858;*/
+		background:#585858;
 	}
 		.social-list li a:hover {
-			/*background:#b30404;
-			background-size:auto;
-			background:url(../images/social-icon-1_ON.png) no-repeat center;*/
-			
+			background:#b30404;
 		}
-		
