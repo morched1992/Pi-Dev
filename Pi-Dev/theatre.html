@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  	<title>theatre</title>
+  	<meta charset="utf-8">
+    <meta name="description" content="Your description">
+    <meta name="keywords" content="Your keywords">
+    <meta name="author" content="Your name">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/zerogrid.css">
+	<link rel="stylesheet" href="css/responsive.css">
+   
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+	<script src="js/css3-mediaqueries.js"></script>
+    <script src="js/jquery-1.7.1.min.js"></script>
+    <script src="js/superfish.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/tms-0.4.1.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/modernizr.custom.js"></script>
+    <script>
+<!-- 
+StarOutUrl=		'images/StarOut.png';		//image par défaut
+StarOverUrl=	'images/StarOver.gif';		//image d'une étoile sélectionnée
+StarBaseId=		'Star';				//id de base des étoiles
+NbStar=			10;					//nombre d'étoiles
+
+LgtStarBaseId=StarBaseId.lastIndexOf('');
+
+function NotationSystem() {
+	for (i=1;i<NbStar+1;i++) {
+		var img			=document.getElementById('Star'+i);
+			
+		img.onclick		=function() {alert('Vous avez donné la note de '+Name2Nb(this.id)+'.');};
+		//Réaction lors du clic sur une étoile
+		//Evidemment, il faudrait compléter cette fonction pour la rendre vraiment utile.
+		//Par exemple, envoyer la note dans une base de donnée via un XMLHttpRequest.
+		
+		img.alt			='Donner la note de '+i;
+		//Texte au survol
+		
+		img.src			=StarOutUrl;
+		img.onmouseover	=function() {StarOver(this.id);};
+		img.onmouseout	=function() {StarOut(this.id);};
+	}
+}
+
+function StarOver(Star) {
+	StarNb=Name2Nb(Star);
+	for (i=1;i<(StarNb*1)+1;i++) {
+		document.getElementById('Star'+i).src=StarOverUrl;
+	}
+}
+
+function StarOut(Star) {
+	StarNb=Name2Nb(Star);
+	for (i=1;i<(StarNb*1)+1;i++) {
+		document.getElementById('Star'+i).src=StarOutUrl;
+	}
+}
+
+function Name2Nb(Star) {
+	//Le survol d'une étoile ne nous permet pas de connaître directement son numéro
+	//Cette fonction extrait donc ce numéro à partir de l'Id
+	StarNb=Star.slice(LgtStarBaseId);
+	return(StarNb);
+} 
+-->
+</script>
+    
+<!--[if lt IE 8]>
+   <div style=' clear: both; text-align:center; position: relative;'>
+     <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+       <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+    </a>
+  </div>
+<![endif]-->
+<!--[if lt IE 9]>
+	<script src="js/html5.js"></script>
+	<link rel="stylesheet" href="css/ie.css"> 
+<![endif]-->
+</head>
+<body onLoad="NotationSystem();">
+<div class="main-bg">
+    <!-- Header -->
+    <header>
+    	<div class="nav-responsive"><div>MENU</div>
+			<select onChange="location=this.value">
+				<option></option>
+				<option value="index.html">Home</option>
+				<option value="products.html">Products</option>
+				<option value="technology.html">Technology</option>
+				<option value="#">--- Maecenas faucibus</option>
+				<option value="#">--- Fusce tincidunt</option>
+				<option value="#">--- Tempor eros</option>
+				<option value="#">--- --- Ut viverra</option>
+				<option value="#">--- --- Hendrerit mauris</option>
+				<option value="#">--- Mauris ut du</option>
+				<option value="pricing.html">Pricing</option>
+				<option value="contacts.html">Contacts</option>
+			</select>
+		</div>
+    	<div class="inner">
+            
+          <nav>
+                <ul class="sf-menu">
+                	<li><h1 class="logo"><a href="index.html"></a></h1> </li>
+                    <li class="current"></br><a href="index.html">home</a></li>
+                    <li></br><a href="products.html">News</a></li>
+                    <li></br>
+                    	<a href="#">Culture</a>
+                        <ul>
+                        	<li></br><a href="cinema.html">Cinema</a></li>
+                            <li><a href="theatre.html">Théatre</a></li>
+                            <li><a href="#">Concert</a></li>
+                            
+                          
+                        </ul>
+                    </li>
+                     <li></br>
+                    	<a href="#">Galerie</a>
+                        <ul>
+                        	<li></br><a href="cinema.html">Photo</a></li>
+                            <li><a href="#">Videos</a></li>
+                           
+                            
+                          
+                        </ul>
+                    </li>
+                    <li></br><a href="Evenement.php">Evenement</a></li>
+                    <li></br><a href="Kids.php">Kids</a></li>
+                    <li></br><a href="contacts.html">contacts</a></li>
+                </ul>
+            </nav>
+            <div class="clear"></div>
+        </div>
+    </header>
+    <!-- Content -->
+    
+    
+    <section id="content">
+        <div class="zerogrid">
+            	<div class="row content-bg">
+                	<div class="wrapper">
+                    	<article class="col-1-3">
+                        
+							
+        </div>
+        
+        <h2 style="color:#717171;">Dernieres pieces de theatres !</h2>
+         <article style="width:250px; float:right;" >
+                            	<h2>Les pieces de theatres:</h2>
+                                <ul class="list-1">
+                                    <li><a href="#">10 ans de mariage</a></li>
+                                    <li><a href="#">24 heures de la vie d'une femme</a></li>
+                                    <li><a href="#">5 minutes de plaisir</a></li>
+                                    <li><a href="#">A portee de crachat</a></li>
+                                    <li><a href="#">Aimez vous la nuit</a></li>
+                                    <li><a href="#">L'affrontement</a></li>
+                                    <li><a href="#">A vie contraire</a></li>
+                                </ul>
+                            </article>
+							
+							
+							<article> <table>
+							<tr>
+							<td><img src="photosslide/1360054338380.jpg" width="200"  height="300"style="left;"></td>
+							<td>
+							<p> Pour feter leurs dix ans de mariage, </br>Lisa organise une soiree surprise pour son mari.</br> Ce dernier a non seulement oublie cette date, </br>mais il a choisi cette soiree pour demander le divorce ! </p>
+							 <a href="$">Read more</a><td>
+							 </br>
+							</tr>
+        
+		<tr>
+		</br>
+							<td><img src="photosslide/32900b01c0f1f16d610559d36e7cfe09 (1).jpg" width="150" height="10"> </br></td></br>
+							<td><p> Pour Arno, ce n'est pas vraiment ce qu'on peut appeler </br>une bonne soiree. Julie vient de partir. </br>Il se retrouve seul. Enfin, seul Pas vraiment.</p>
+							 <a href="$">Read more</a></td>
+							</tr></br><tr>
+		</br>
+							<td><img src="photosslide/8bc6b8cf15c0ffa80ab0faa3a0d520bf.jpg"></td>
+							<td><p> Le recit d'une passion breve et foudroyante entre </br>une aristocrate et un jeune homme ronge par </br>la folie du jeu..</p>
+							 <a href="$">Read more</a></td>
+							</tr>
+        
+        </table>
+        </article>
+      
+            
+            
+        
+        
+        
+        
+        
+        
+        
+    </section>
+    
+    
+    
+      
+                        	
+                           
+							
+    
+    
+    
+    <!-- Footer -->
+    <footer>
+    	<div class="zerogrid">
+        	<div class="row footer-bg">
+        			<div class="hr-border-2"></div>
+                    <div class="wrapper">
+                        <div class="col-1-3">
+							<div class="wrap-col">
+	                        	<div class="copyright">
+	                            	&copy; 2012 <strong class="footer-logo">AgroPlus</strong>
+	                                <div>
+									<a rel="nofollow" href="http://www.templatemonster.com">Website Template</a> by TemplateMonster.com
+									<a rel="nofollow" href="http://www.zerotheme.com/432/free-responsive-html5-css3-website-templates.html">Responsive Themes</a> by Zerotheme.com
+									</div>
+	                            </div>
+							</div>
+                        </div>
+						<div class="col-2-3">
+							<div class="col-1-4">
+								<div class="wrap-col">
+		                        	<h5 class="heading-1">Archives:</h5>
+		                            <ul class="footer-list">
+		                            	<li><a href="#">October 2012</a></li>
+		                                <li><a href="#">September 2012</a></li>
+		                                <li><a href="#">August 2012</a></li>
+		                                <li><a href="#">July 2012</a></li>
+		                            </ul>
+								</div>
+	                        </div>
+	                        <div class="col-1-4">
+								<div class="wrap-col">
+		                        	<h5 class="heading-1">Links:</h5>
+		                            <ul class="footer-list">
+		                            	<li><a href="#">Documentation</a></li>
+		                                <li><a href="#">Plugins</a></li>
+		                                <li><a href="#">Suggest Ideas</a></li>
+		                                <li><a href="#">Support Forum</a></li>
+		                            </ul>
+								</div>
+	                        </div>
+	                        <div class="col-1-4">
+								<div class="wrap-col">
+		                        	<h5 class="heading-1">Support:</h5>
+		                            <ul class="footer-list">
+		                            	<li><a href="#">Special Proposition</a></li>
+		                                <li><a href="#">Free Phone</a></li>
+		                                <li><a href="#">Solutions</a></li>
+		                            </ul>
+								</div>
+	                        </div>
+	                        <div class="col-1-4">
+	                          <div class="wrap-col">
+	                            <ul class="social-list">
+	                              <li><a target="_blank" href="http://www.youtube.com/channel/UC58aM8Y9yyv2nBgwa0SATDg?guided_help_flow=3"><img src="images/social-icon-1.png" alt="Youtube"></a></li>
+	                              <li><a target="_blank" href="https://www.facebook.com/pages/Jetset-Mag/582685868492072"><img src="images/social-icon-2.png" alt=""></a></li>
+	                              <li><a target="_blank" href="https://twitter.com/JetSetMagz"><img src="images/social-icon-3.png" alt=""></a></li>
+	                              <li><a target="_blank" href="http://www.linkedin.com/profile/view?id=322696667&trk=nav_responsive_tab_profile"><img src="images/social-icon-4.png" alt=""></a></li>
+	                              <li><a target="_blank" href="http://instagram.com/jetsetmagz/"><img src="images/social-icon-5.png" alt=""></a></li>
+                                </ul>
+                              </div>
+	                        </div>
+							
+						</div>
+                    </div>
+        	</div>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
