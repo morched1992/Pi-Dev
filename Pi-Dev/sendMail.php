@@ -2,7 +2,7 @@
 
 // EDIT THE 2 LINES BELOW AS REQUIRED
 
-$send_email_to = "morched.choura@esprit.tn";
+$send_email_to = "lespapitchs.jetsetmag@gmail.com";
 $email_subject = "Bonjour les Papitchs";
 
 function send_email($name,$email,$email_message,$prenom,$sujet)
