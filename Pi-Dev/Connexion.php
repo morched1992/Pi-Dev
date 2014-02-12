@@ -20,7 +20,9 @@ mysql_select_db($base_de_donnes,$lien);
 
  
   $query1 = "select * from album";        
-$cur1=mysql_query($query1);  
+$cur1=mysql_query($query1);
+$query1 = "select * from videos";        
+$cur2=mysql_query($query1);    
 
 
 ?>
